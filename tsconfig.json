@@ -23,6 +23,13 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/js/vendor.bundle.js", "styles/js/vendor.bundle.jsx", "styles/js/theme.bundle.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "styles/js/vendor.bundle.js",
+    "styles/js/vendor.bundle.jsx",
+    "styles/js/theme.bundle.jsx"
+  ],
   "exclude": ["node_modules"]
 }

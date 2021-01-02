@@ -1,11 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps /*, AppContext */ } from "next/app";
 
-import "@/styles/js/theme.bundle";
-let vendor;
-if (typeof window !== "undefined") {
-  vendor = require("@/styles/js/vendor.bundle");
-}
+
 
 
 function MyApp({ Component, pageProps }: AppProps) {
