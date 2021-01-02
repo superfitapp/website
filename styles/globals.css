@@ -58,7 +58,7 @@ a {
 }
 body {
   margin: 0;
-  font-family: HKGroteskPro, serif;
+  font-family: Nunito, serif;
   font-size: 1.0625rem;
   font-weight: 400;
   line-height: 1.6;
@@ -5702,7 +5702,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: HKGroteskPro, serif;
+  font-family: Nunito, serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -5810,7 +5810,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 380px;
-  font-family: HKGroteskPro, serif;
+  font-family: Nunito, serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -16431,15 +16431,20 @@ body,
 html {
   overflow-x: hidden;
 }
-@font-face {
-  font-family: HKGroteskPro;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* @font-face {
+  font-family: Nunito;
   font-weight: 400;
   src: url(../public/fonts/HK%20Grotesk%20Pro/HKGroteskPro-Regular.woff2)
       format("woff2"),
     url(../public/fonts/HK%20Grotesk%20Pro/HKGroteskPro-Regular.woff) format("woff");
 }
 @font-face {
-  font-family: HKGroteskPro;
+  font-family: Nunito;
   font-weight: 600;
   src: url(../public/fonts/HK%20Grotesk%20Pro/HKGroteskPro-Medium.woff2)
       format("woff2"),
@@ -16452,7 +16457,8 @@ html {
     url(../public/fonts/Feather/Feather.svg?sdxovp#Feather) format("svg");
   font-weight: 400;
   font-style: normal;
-}
+} */
+
 .h1,
 .h2,
 h1,
@@ -19539,7 +19545,7 @@ a.card:hover {
   background-color: transparent;
 }
 .ql-container {
-  font-family: HKGroteskPro, serif;
+  font-family: Nunito, serif;
 }
 .ql-toolbar {
   position: relative;
