@@ -16432,9 +16432,9 @@ html {
   overflow-x: hidden;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 /* @font-face {
   font-family: Nunito;
@@ -16450,6 +16450,8 @@ html {
       format("woff2"),
     url(../public/fonts/HK%20Grotesk%20Pro/HKGroteskPro-Medium.woff) format("woff");
 }
+ */
+
 @font-face {
   font-family: Feather;
   src: url(../public/fonts/Feather/Feather.ttf?sdxovp) format("truetype"),
@@ -16457,7 +16459,7 @@ html {
     url(../public/fonts/Feather/Feather.svg?sdxovp#Feather) format("svg");
   font-weight: 400;
   font-style: normal;
-} */
+}
 
 .h1,
 .h2,
@@ -17979,7 +17981,8 @@ a.card:hover {
   width: 0;
   height: 0;
   background-image: url(../public/img/masks/avatar-status.svg),
-    url(../public/img/masks/avatar-group.svg), url(../public/img/masks/avatar-group-hover.svg),
+    url(../public/img/masks/avatar-group.svg),
+    url(../public/img/masks/avatar-group-hover.svg),
     url(../public/img/masks/avatar-group-hover-last.svg);
 }
 .avatar-img {
@@ -19872,7 +19875,6 @@ a.card:hover {
   max-width: 100%;
   height: auto;
 }
-
 
 /* libs */
 

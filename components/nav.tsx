@@ -12,7 +12,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
     <nav className={"navbar navbar-expand-lg " + navClassList}>
       <div className={containerClass}>
         {/* Brand */}
-        <a className="navbar-brand" href="/index.html">
+        <a className="navbar-brand" href="./">
           <img src="/img/brand.svg" className="navbar-brand-img" alt="..." />
         </a>
         {/* Toggler */}
@@ -130,7 +130,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
                           {/* List */}
                           <a
                             className="dropdown-item"
-                            href="{{webRoot}}/index.html"
+                            href="./"
                           >
                             Basic
                           </a>
@@ -555,7 +555,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
                 <div className="list-group list-group-flush">
                   <a
                     className="list-group-item"
-                    href="{{webRoot}}/docs/index.html"
+                    href="./"
                   >
                     {/* Icon */}
                     <div className="icon icon-sm text-primary">

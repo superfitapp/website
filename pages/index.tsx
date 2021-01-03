@@ -10,10 +10,6 @@ export default function Home() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-md-10 col-lg-8 text-center">
-              {/* Preheader */}
-              <h6 className="text-uppercase text-primary" data-aos="fade-up">
-                Mobile Fitness Platform
-              </h6>
               {/* Headin */}
               <h1
                 className="display-1 font-weight-bold"
@@ -23,16 +19,7 @@ export default function Home() {
                 Send Workouts To{" "}
                 <span className="text-primary">Personal Training Clients.</span>
               </h1>
-              {/* Text */}
-              <p
-                className="lead text-muted mb-6"
-                data-aos="fade-up"
-                data-aos-delay={100}
-              >
-                Powerful workout builder. Simple client experience. Built-in
-                signup forms. Seamless subscription features.
-              </p>
-              {/* Button */}
+
               <p
                 className="mb-7 mb-md-9"
                 data-aos="fade-up"
@@ -44,22 +31,21 @@ export default function Home() {
               </p>
             </div>
           </div>{" "}
-          {/* / .row */}
           <div className="row">
             <div className="col-12" data-aos="fade-up" data-aos-delay={200}>
               {/* Video */}
               <div className="embed-responsive embed-responsive-16by9">
                 <video
                   className="embed-responsive-item rounded-lg bg-light shadow-lg"
-                  src="/video/intro_superfit_trailer.mp4"
+                  src="/video/workout_builder.m4v"
                   autoPlay
                   loop
                   muted
                 >
                   Sorry, your browser doesn't support embedded videos, but don't
                   worry, you can{" "}
-                  <a href="/video/intro_superfit_trailer.mp4">download it</a>
-                  and watch it with your favorite video player!
+                  <a href="https://vimeo.com/496499273">watch it</a>
+                  with your favorite video player!
                 </video>
               </div>
             </div>
@@ -101,12 +87,12 @@ export default function Home() {
               <div className="col-12 col-md-7 order-md-1">
                 {/* Heading */}
                 <h2 className="text-white" style={{ maxWidth: "450px" }}>
-                  We start with your needs and deliver a full banking solution.
+                  Introducing Paid Memberships. Powered by Stripe.
                 </h2>
                 {/* Text */}
                 <div className="lead text-muted-80 mb-0">
-                  Once you provide us with your company’s basic information, we
-                  handle the remainder of the process without questions.
+                  Convert a workout schedule on SuperFit into a recurring (or
+                  lifetime) membership with the flip of a switch.
                 </div>
               </div>
             </div>{" "}
@@ -135,12 +121,11 @@ export default function Home() {
                   </div>
                   <div className="col col-md-12 ml-n5 ml-md-0">
                     {/* Heading */}
-                    <h3 className="text-white">Fill out your intro survey</h3>
+                    <h3 className="text-white">Sign up for SuperFit</h3>
                     {/* Text */}
                     <p className="text-muted-80 mb-6 mb-md-0">
-                      We start with a short 3-step online survey to help us
-                      determine the best banking solution for your specific
-                      startup.
+                      Creating paid memberships is a premium add-on. Why? Some
+                      trainers prefer managing payments on their own.
                     </p>
                   </div>
                 </div>{" "}
@@ -169,11 +154,12 @@ export default function Home() {
                   </div>
                   <div className="col col-md-12 ml-n5 ml-md-0">
                     {/* Heading */}
-                    <h3 className="text-white">We build a banking stack.</h3>
+                    <h3 className="text-white">Onboarding Call</h3>
                     {/* Text */}
                     <p className="text-muted-80 mb-6 mb-md-0">
-                      From your information, we generate a banking stack well
-                      suited to your company’s personalized needs.
+                      We start with a friendly 20-min call to help set you up
+                      with Stripe. Afterwards, we'll walk you through connecting
+                      SuperFit and Stripe in the app.
                     </p>
                   </div>
                 </div>{" "}
@@ -198,11 +184,12 @@ export default function Home() {
                   </div>
                   <div className="col col-md-12 ml-n5 ml-md-0">
                     {/* Heading */}
-                    <h3 className="text-white">Registration and filings</h3>
+                    <h3 className="text-white">Start Charging 💸</h3>
                     {/* Text */}
                     <p className="text-muted-80 mb-0">
-                      We handle the creation of your actual account including
-                      registering with the financial and government agencies.
+                      Once complete, you can start charging a monthly
+                      subscription or a lifetime membership for access to your
+                      workouts!
                     </p>
                   </div>
                 </div>{" "}
@@ -225,6 +212,170 @@ export default function Home() {
             </svg>
           </div>
         </div>
+      </div>
+
+      <div>
+        {/* ABOUT */}
+        <section className="pt-8 pt-md-11">
+          <div className="container">
+            <div className="row align-items-center justify-content-between">
+              <div className="col-12 col-md-6 mb-5 mb-md-0">
+                {/* Images */}
+                <div className="row">
+                  <div className="col-6 mr-n5">
+                    <img
+                      src="/img/photos/photo-23.jpg"
+                      alt="..."
+                      className="img-fluid mb-4 rounded"
+                      data-aos="fade-right"
+                      data-aos-delay={100}
+                    />
+                    <img
+                      src="/img/photos/photo-25.jpg"
+                      alt="..."
+                      className="img-fluid rounded"
+                      data-aos="fade-right"
+                      data-aos-delay={150}
+                    />
+                  </div>
+                  <div className="col-6 mt-8">
+                    <img
+                      src="/img/photos/photo-22.jpg"
+                      alt="..."
+                      className="img-fluid mb-4 rounded"
+                      data-aos="fade-right"
+                    />
+                    <img
+                      src="/img/photos/photo-24.jpg"
+                      alt="..."
+                      className="img-fluid rounded"
+                      data-aos="fade-right"
+                      data-aos-delay={50}
+                    />
+                  </div>
+                </div>{" "}
+                {/* / .row */}
+              </div>
+              <div className="col-12 col-md-6 col-lg-5" data-aos="fade-left">
+                {/* Heading */}
+                <h2 className="font-weight-bold">
+                  Build workouts at the speed of thought.
+                </h2>
+                {/* Text */}
+                <p className="font-size-lg text-muted mb-4">
+                  Staying connected while traveling can be tough, but Landkit
+                  makes it easy by automatically sharing your experiences.
+                </p>
+                {/* Button */}
+                <a
+                  className="btn btn-pill btn-primary shadow lift"
+                  data-bigpicture='{"vimeoSrc": "496493129" }'
+                  href="#"
+                >
+                  <span className="h6 text-uppercase font-weight-bold">
+                    <i className="fe fe-play mr-2" /> See How
+                  </span>
+                </a>
+              </div>
+            </div>{" "}
+            {/* / .row */}
+          </div>{" "}
+          {/* / .container */}
+        </section>
+        {/* ABOUT */}
+        <section className="py-8 py-md-11">
+          <div className="container">
+            <div className="row align-items-center justify-content-between">
+              <div className="col-12 col-md-6 col-lg-7 order-md-2">
+                {/* Image */}
+                <img
+                  src="/img/screenshots/ui/mobile-chat.png"
+                  alt="..."
+                  className="img-fluid mb-6 mb-md-8 mb-md-0"
+                  data-aos="fade-left"
+                />
+              </div>
+              <div
+                className="col-12 col-md-6 col-lg-5 order-md-1"
+                data-aos="fade-right"
+              >
+                {/* Heading */}
+                <h2 className="font-weight-bold">
+                  Use your phone number so you're easy to find.
+                </h2>
+                {/* Text */}
+                <p className="font-size-lg text-muted mb-0">
+                  Landkit uses your phone number for your account instead of an
+                  email or username so you're super easy to find for all your
+                  friends.
+                </p>
+              </div>
+            </div>{" "}
+            {/* / .row */}
+          </div>{" "}
+          {/* / .container */}
+        </section>
+        {/* SHAPE */}
+        <div className="position-relative">
+          <div className="shape shape-top shape-fluid-x svg-shim text-white">
+            {"{"}
+            {"{"}&gt; waves/wave-1{"}"}
+            {"}"}
+          </div>
+        </div>
+        {/* VIDEO */}
+        <section
+          className="py-12 py-md-13 bg-cover"
+          style={{ backgroundImage: "url(/img/covers/bottom_wide_hero.jpg)" }}
+        >
+          <div className="container py-md-13">
+            <div className="row">
+              <div className="col-12 text-center">
+                {/* Button */}
+                <a
+                  className="btn btn-pill btn-white text-body shadow lift"
+                  data-bigpicture='{"vimeoSrc": "399182178"}'
+                  href="#"
+                >
+                  <span className="h6 text-uppercase font-weight-bold">
+                    <i className="fe fe-play mr-2" /> Watch video
+                  </span>
+                </a>
+              </div>
+            </div>{" "}
+            {/* / .row */}
+          </div>{" "}
+          {/* / .container */}
+        </section>
+        {/* CTA */}
+        <section className="pt-6 pt-md-8">
+          <div className="container pb-6 pb-md-8 border-bottom">
+            <div className="row align-items-center">
+              <div className="col-12 col-md">
+                {/* Heading */}
+                <h3 className="font-weight-bold mb-1">
+                  Download the free app!
+                </h3>
+                {/* Text */}
+                <p className="text-muted mb-6 mb-md-0">
+                  The fitness platform where workouts are built.
+                </p>
+              </div>
+              <div className="col-auto">
+                <a href="#!" className="text-reset d-inline-block mr-1">
+                  <img
+                    src="/img/buttons/button-app.png"
+                    className="img-fluid"
+                    alt="..."
+                    style={{ maxWidth: "155px" }}
+                  />
+                </a>
+              </div>
+            </div>{" "}
+            {/* / .row */}
+          </div>{" "}
+          {/* / .container */}
+        </section>
       </div>
     </Layout>
   );
