@@ -46,17 +46,103 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                id="navbarLandings"
+                id="navbarFeatures"
                 data-toggle="dropdown"
                 href="#"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Landings
+                Features
+              </a>
+              <div
+                className="dropdown-menu dropdown-menu-md"
+                aria-labelledby="navbarFeatures"
+              >
+                <div className="list-group list-group-flush">
+                  <a className="list-group-item" href="./">
+                    {/* Icon */}
+                    <div className="icon icon-sm text-primary">
+                      {"{"}
+                      {"{"}&gt; general/clipboard{"}"}
+                      {"}"}
+                    </div>
+                    {/* Content */}
+                    <div className="ml-4">
+                      {/* Heading */}
+                      <h6 className="font-weight-bold text-uppercase text-primary mb-0">
+                        Documentation
+                      </h6>
+                      {/* Text */}
+                      <p className="font-size-sm text-gray-700 mb-0">
+                        Customizing and building
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    className="list-group-item"
+                    href="{{webRoot}}/docs/alerts.html"
+                  >
+                    {/* Icon */}
+                    <div className="icon icon-sm text-primary">
+                      {"{"}
+                      {"{"}&gt; layout/layout-4-blocks{"}"}
+                      {"}"}
+                    </div>
+                    {/* Content */}
+                    <div className="ml-4">
+                      {/* Heading */}
+                      <h6 className="font-weight-bold text-uppercase text-primary mb-0">
+                        Components
+                      </h6>
+                      {/* Text */}
+                      <p className="font-size-sm text-gray-700 mb-0">
+                        Full list of components
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    className="list-group-item"
+                    href="{{webRoot}}/docs/changelog.html"
+                  >
+                    {/* Icon */}
+                    <div className="icon icon-sm text-primary">
+                      {"{"}
+                      {"{"}&gt; files/file{"}"}
+                      {"}"}
+                    </div>
+                    {/* Content */}
+                    <div className="ml-4">
+                      {/* Heading */}
+                      <h6 className="font-weight-bold text-uppercase text-primary mb-0">
+                        Changelog
+                      </h6>
+                      {/* Text */}
+                      <p className="font-size-sm text-gray-700 mb-0">
+                        Keep track of changes
+                      </p>
+                    </div>
+                    {/* Badge */}
+                    <span className="badge rounded-pill bg-primary-soft ml-auto">
+                      2.0.0-alpha
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                id="navbarUsecases"
+                data-toggle="dropdown"
+                href="#"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Use Cases
               </a>
               <div
                 className="dropdown-menu dropdown-menu-xl p-0"
-                aria-labelledby="navbarLandings"
+                aria-labelledby="navbarUsecases"
               >
                 <div className="row gx-0">
                   <div className="col-12 col-lg-6">
@@ -128,10 +214,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
                           {/* Heading */}
                           <h6 className="dropdown-header">Web</h6>
                           {/* List */}
-                          <a
-                            className="dropdown-item"
-                            href="./"
-                          >
+                          <a className="dropdown-item" href="./">
                             Basic
                           </a>
                           <a
@@ -536,95 +619,6 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
                   </div>
                 </li>
               </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                id="navbarDocumentation"
-                data-toggle="dropdown"
-                href="#"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Documentation
-              </a>
-              <div
-                className="dropdown-menu dropdown-menu-md"
-                aria-labelledby="navbarDocumentation"
-              >
-                <div className="list-group list-group-flush">
-                  <a
-                    className="list-group-item"
-                    href="./"
-                  >
-                    {/* Icon */}
-                    <div className="icon icon-sm text-primary">
-                      {"{"}
-                      {"{"}&gt; general/clipboard{"}"}
-                      {"}"}
-                    </div>
-                    {/* Content */}
-                    <div className="ml-4">
-                      {/* Heading */}
-                      <h6 className="font-weight-bold text-uppercase text-primary mb-0">
-                        Documentation
-                      </h6>
-                      {/* Text */}
-                      <p className="font-size-sm text-gray-700 mb-0">
-                        Customizing and building
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    className="list-group-item"
-                    href="{{webRoot}}/docs/alerts.html"
-                  >
-                    {/* Icon */}
-                    <div className="icon icon-sm text-primary">
-                      {"{"}
-                      {"{"}&gt; layout/layout-4-blocks{"}"}
-                      {"}"}
-                    </div>
-                    {/* Content */}
-                    <div className="ml-4">
-                      {/* Heading */}
-                      <h6 className="font-weight-bold text-uppercase text-primary mb-0">
-                        Components
-                      </h6>
-                      {/* Text */}
-                      <p className="font-size-sm text-gray-700 mb-0">
-                        Full list of components
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    className="list-group-item"
-                    href="{{webRoot}}/docs/changelog.html"
-                  >
-                    {/* Icon */}
-                    <div className="icon icon-sm text-primary">
-                      {"{"}
-                      {"{"}&gt; files/file{"}"}
-                      {"}"}
-                    </div>
-                    {/* Content */}
-                    <div className="ml-4">
-                      {/* Heading */}
-                      <h6 className="font-weight-bold text-uppercase text-primary mb-0">
-                        Changelog
-                      </h6>
-                      {/* Text */}
-                      <p className="font-size-sm text-gray-700 mb-0">
-                        Keep track of changes
-                      </p>
-                    </div>
-                    {/* Badge */}
-                    <span className="badge rounded-pill bg-primary-soft ml-auto">
-                      2.0.0-alpha
-                    </span>
-                  </a>
-                </div>
-              </div>
             </li>
           </ul>
           {/* Button */}

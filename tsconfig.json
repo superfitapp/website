@@ -7,7 +7,8 @@
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "@/partials/*": ["partials/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -29,7 +30,8 @@
     "**/*.tsx",
     "styles/js/vendor.bundle.js",
     "styles/js/vendor.bundle.jsx",
-    "styles/js/theme.bundle.jsx"
+    "styles/js/theme.bundle.jsx",
+    "next.config.js"
   ],
   "exclude": ["node_modules"]
 }
