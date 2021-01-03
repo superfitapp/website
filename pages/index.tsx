@@ -16,43 +16,55 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-delay={50}
               >
-                Send Workouts To{" "}
-                <span className="text-primary">Personal Training Clients.</span>
+                Send Workouts To Your{" "}
+                <span className="text-primary">Fitness Clients</span>.
               </h1>
-
+              <p
+                className="lead text-muted mb-6"
+                data-aos="fade-up"
+                data-aos-delay={100}
+              >
+                Powerful workout builder. Simple client app. Built-in signup
+                forms. Integrated subscription billing.
+              </p>
               <p
                 className="mb-7 mb-md-9"
                 data-aos="fade-up"
                 data-aos-delay={150}
               >
                 <a className="btn btn-primary shadow lift" href="#!">
-                  Open an account <i className="fe fe-arrow-right ml-3" />
+                  Download the Free App
+                  <i className="fe fe-arrow-right ml-3" />
                 </a>
               </p>
             </div>
           </div>{" "}
           <div className="row">
-            <div className="col-12" data-aos="fade-up" data-aos-delay={200}>
-              {/* Video */}
-              <div className="embed-responsive embed-responsive-16by9">
-                <video
-                  className="embed-responsive-item rounded-lg bg-light shadow-lg"
-                  src="/video/workout_builder.m4v"
-                  autoPlay
-                  loop
-                  muted
-                >
-                  Sorry, your browser doesn't support embedded videos, but don't
-                  worry, you can{" "}
-                  <a href="https://vimeo.com/496499273">watch it</a>
-                  with your favorite video player!
-                </video>
+            <div className="col-12" data-aos="fade-up" data-aos-delay={100}>
+              <div
+                className="py-12 py-md-13 bg-cover rounded-lg bg-light shadow-lg"
+                style={{
+                  backgroundImage: "url(/img/covers/workout_builder_cover.jpg)",
+                }}
+              >
+                <div className="row">
+                  <div className="col-12 text-center">
+                    {/* Button */}
+                    <a
+                      className="btn btn-pill btn-white text-body shadow lift"
+                      data-bigpicture='{"vimeoSrc": "496499273"}'
+                      href="#"
+                    >
+                      <span className="h6 text-uppercase font-weight-bold">
+                        <i className="fe fe-play mr-2" /> See In Action
+                      </span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>{" "}
-          {/* / .row */}
-        </div>{" "}
-        {/* / .container */}
+          </div>
+        </div>
       </section>
 
       <div>
