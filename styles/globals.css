@@ -7258,7 +7258,7 @@ button.close {
 .ml-16 {
   margin-left: 25rem !important;
 }
-.ml-auto {
+.ms-auto {
   margin-left: auto !important;
 }
 .m-n1 {
@@ -16434,7 +16434,6 @@ html {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 /* @font-face {
@@ -21474,4 +21473,4 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
   --header-menu-gradient-secound-color: rgba(255, 255, 255, 1);
 }
 
-@import url("@/styles/BlogPost.module.css");
+@import url("@/styles/ghost.css");

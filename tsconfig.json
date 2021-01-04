@@ -28,10 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "styles/js/vendor.bundle.js",
-    "styles/js/vendor.bundle.jsx",
-    "styles/js/theme.bundle.jsx",
     "next.config.js"
-  ],
+, "public/js/theme.js"  ],
   "exclude": ["node_modules"]
 }

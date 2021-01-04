@@ -42,7 +42,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
             <i className="fe fe-x" />
           </button>
           {/* Navigation */}
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -122,7 +122,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
                       </p>
                     </div>
                     {/* Badge */}
-                    <span className="badge rounded-pill bg-primary-soft ml-auto">
+                    <span className="badge rounded-pill bg-primary-soft ms-auto">
                       2.0.0-alpha
                     </span>
                   </a>
@@ -430,196 +430,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
               </div>{" "}
               {/* / .row */}
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                id="navbarAccount"
-                data-toggle="dropdown"
-                href="#"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Account
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarAccount">
-                <li className="dropdown-item dropright">
-                  <a
-                    className="dropdown-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
-                    Settings
-                  </a>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/account-general.html"
-                    >
-                      General
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/account-security.html"
-                    >
-                      Security
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/account-notifications.html"
-                    >
-                      Notifications
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/billing-plans-and-payment.html"
-                    >
-                      Plans &amp; Payment
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/billing-users.html"
-                    >
-                      Users
-                    </a>
-                  </div>
-                </li>
-                <li className="dropdown-item dropright">
-                  <a
-                    className="dropdown-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
-                    Sign In
-                  </a>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/signin-cover.html"
-                    >
-                      Side Cover
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/signin-illustration.html"
-                    >
-                      Illustration
-                    </a>
-                    <a className="dropdown-item" href="{{webRoot}}/signin.html">
-                      Basic
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      data-toggle="modal"
-                      href="#modalSigninHorizontal"
-                    >
-                      Modal Horizontal
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      data-toggle="modal"
-                      href="#modalSigninVertical"
-                    >
-                      Modal Vertical
-                    </a>
-                  </div>
-                </li>
-                <li className="dropdown-item dropright">
-                  <a
-                    className="dropdown-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
-                    Sign Up
-                  </a>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/signup-cover.html"
-                    >
-                      Side Cover
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/signup-illustration.html"
-                    >
-                      Illustration
-                    </a>
-                    <a className="dropdown-item" href="{{webRoot}}/signup.html">
-                      Basic
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      data-toggle="modal"
-                      href="#modalSignupHorizontal"
-                    >
-                      Modal Horizontal
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      data-toggle="modal"
-                      href="#modalSignupVertical"
-                    >
-                      Modal Vertical
-                    </a>
-                  </div>
-                </li>
-                <li className="dropdown-item dropright">
-                  <a
-                    className="dropdown-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
-                    Password Reset
-                  </a>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/password-reset-cover.html"
-                    >
-                      Side Cover
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/password-reset-illustration.html"
-                    >
-                      Illustration
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/password-reset.html"
-                    >
-                      Basic
-                    </a>
-                  </div>
-                </li>
-                <li className="dropdown-item dropright">
-                  <a
-                    className="dropdown-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
-                    Error
-                  </a>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/error-cover.html"
-                    >
-                      Side Cover
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="{{webRoot}}/error-illustration.html"
-                    >
-                      Illustration
-                    </a>
-                    <a className="dropdown-item" href="{{webRoot}}/error.html">
-                      Basic
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
+
             <li className="nav-item">
               <a className="nav-link" href="/blog">
                 Blog
@@ -628,7 +439,7 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
           </ul>
           {/* Button */}
           <a
-            className="navbar-btn btn btn-sm btn-primary lift ml-auto"
+            className="navbar-btn btn btn-sm btn-primary lift ms-auto"
             href="https://themes.getbootstrap.com/product/landkit/"
             target="_blank"
           >

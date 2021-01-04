@@ -1,7 +1,6 @@
 import Layout from "@/components/layout";
 import Curves from "@/partials/shapes/curves/curve-1.svg";
 import Curves3 from "@/partials/shapes/curves/curve-3.svg";
-import Curves4 from "@/partials/shapes/curves/curve-4.svg";
 import Curves5 from "@/partials/shapes/curves/curve-5.svg";
 import { getPosts } from "@/utils/posts";
 import { PostsOrPages } from "@tryghost/content-api";
@@ -24,7 +23,7 @@ function Blog(props: { posts: PostsOrPages }) {
         data-jarallax
         data-speed=".8"
         className="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover jarallax"
-        style={{ backgroundImage: "url(/img/covers/cover-13.jpg)" }}
+        style={{ backgroundImage: "url(/img/covers/superfit_blog_cover.jpg)" }}
       >
         <div className="container">
           <div className="row justify-content-center">
@@ -35,8 +34,8 @@ function Blog(props: { posts: PostsOrPages }) {
               </h1>
               {/* Text */}
               <p className="lead mb-0 text-white-75">
-                Keep up to date with what we're working on! Landkit is an ever
-                evolving theme with regular updates.
+                Insights, news and growth strategies for today’s fitness
+                professional.
               </p>
             </div>
           </div>
@@ -184,7 +183,7 @@ function Blog(props: { posts: PostsOrPages }) {
                         Ab Hadley
                       </h6>
                       {/* Date */}
-                      <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                      <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                         <time dateTime="2019-05-02">May 02</time>
                       </p>
                     </a>
@@ -298,7 +297,7 @@ function Blog(props: { posts: PostsOrPages }) {
                       )}
 
                       {/* Date */}
-                      <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                      <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                         <time dateTime="2019-05-02">
                           {formatDistance(
                             new Date(post.published_at),
@@ -376,7 +375,7 @@ function Blog(props: { posts: PostsOrPages }) {
                     Ab Hadley
                   </h6>
                   {/* Date */}
-                  <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                     <time dateTime="2019-05-02">May 02</time>
                   </p>
                 </a>
@@ -429,7 +428,7 @@ function Blog(props: { posts: PostsOrPages }) {
                     Adolfo Hess
                   </h6>
                   {/* Date */}
-                  <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                     <time dateTime="2019-05-02">May 02</time>
                   </p>
                 </a>
@@ -480,7 +479,7 @@ function Blog(props: { posts: PostsOrPages }) {
                     Ab Hadley
                   </h6>
                   {/* Date */}
-                  <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                     <time dateTime="2019-05-02">May 02</time>
                   </p>
                 </a>
@@ -531,7 +530,7 @@ function Blog(props: { posts: PostsOrPages }) {
                     Adolfo Hess
                   </h6>
                   {/* Date */}
-                  <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                     <time dateTime="2019-05-02">May 02</time>
                   </p>
                 </a>
@@ -582,7 +581,7 @@ function Blog(props: { posts: PostsOrPages }) {
                     Ab Hadley
                   </h6>
                   {/* Date */}
-                  <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                     <time dateTime="2019-05-02">May 02</time>
                   </p>
                 </a>
@@ -633,7 +632,7 @@ function Blog(props: { posts: PostsOrPages }) {
                     Ab Hadley
                   </h6>
                   {/* Date */}
-                  <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <p className="h6 text-uppercase text-muted mb-0 ms-auto">
                     <time dateTime="2019-05-02">May 02</time>
                   </p>
                 </a>
