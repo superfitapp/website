@@ -6,6 +6,15 @@ import Image from "next/image";
 require("@/styles/BlogPost.module.css");
 
 function BlogPost(props: { post: PostOrPage }) {
+
+  if (!props.post) {
+    return (
+      <Layout user={null} loading={false}>
+        <div></div>
+      </Layout>
+    );
+  }
+
   let featureImageUrl = props.post.feature_image
     ? `url(${props.post.feature_image})`
     : null;
@@ -170,17 +179,5 @@ export async function getStaticProps({ params }) {
     revalidate: 1, // In seconds
   };
 }
-
-// BlogPost.getInitialProps = async ({ query }) => {
-//   const { postSlug } = query;
-
-//   if (!postSlug) {
-//     window.location.href = "/404";
-//     return;
-//   }
-
-//   const post: PostOrPage | void = await getPost(postSlug);
-//   return { post: post };
-// };
 
 export default BlogPost;

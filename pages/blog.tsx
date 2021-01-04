@@ -10,6 +10,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Blog(props: { posts: PostsOrPages }) {
+  if (!props.posts) {
+    return (
+      <Layout user={null} loading={false}>
+        <div></div>
+      </Layout>
+    );
+  }
+
   return (
     <Layout user={null} loading={false}>
       <section
