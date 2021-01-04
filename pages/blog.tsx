@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import Curves from "@/partials/shapes/curves/curve-1.svg";
+import Curves2 from "@/partials/shapes/curves/curve-2.svg";
 import Curves3 from "@/partials/shapes/curves/curve-3.svg";
 import Curves4 from "@/partials/shapes/curves/curve-4.svg";
 import Curves5 from "@/partials/shapes/curves/curve-5.svg";
@@ -7,6 +8,7 @@ import { getPosts } from "@/utils/posts";
 import { PostsOrPages } from "@tryghost/content-api";
 import { formatDistance } from "date-fns";
 import Image from "next/image";
+import Link from "next/link";
 
 function Blog(props: { posts: PostsOrPages }) {
   return (
@@ -22,7 +24,7 @@ function Blog(props: { posts: PostsOrPages }) {
             <div className="col-12 col-md-10 col-lg-7 text-center">
               {/* Heading */}
               <h1 className="display-2 font-weight-bold text-white">
-                Our Newsroom
+                SuperFit Blog
               </h1>
               {/* Text */}
               <p className="lead mb-0 text-white-75">
@@ -211,8 +213,6 @@ function Blog(props: { posts: PostsOrPages }) {
           </div>
           <div className="row">
             {props.posts.map((post) => (
-              // <li key={post.id}>{post.title}</li>
-
               <div
                 key={post.id}
                 className="col-12 col-md-6 col-lg-4 d-flex my-2"
@@ -220,67 +220,86 @@ function Blog(props: { posts: PostsOrPages }) {
                 {/* Card */}
                 <div className="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
                   {/* Image */}
-                  <a className="card-img-top" href="#!">
-                    {/* Image */}
-                    <Image
-                      src={post.feature_image}
-                      alt="..."
-                      className="card-img-top"
-                      height="300"
-                      width="400"
-                      layout="intrinsic"
-                    />
-                    {/* Shape */}
-                    <div className="position-relative">
-                      <div className="shape shape-bottom shape-fluid-x svg-shim text-white">
-                        <Curves3 />
+
+                  <Link
+                    href={`/blog/${encodeURIComponent(post.slug)}`}
+                    passHref
+                  >
+                    <a className="card-img-top">
+                      {/* Image */}
+                      <Image
+                        src={post.feature_image}
+                        alt="..."
+                        className="card-img-top"
+                        height="250"
+                        width="450"
+                        layout="responsive"
+                        objectFit="cover"
+                      />
+                      {/* Shape */}
+                      <div className="position-relative">
+                        <div className="shape shape-bottom shape-fluid-x svg-shim text-white">
+                          <Curves3 />
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </Link>
+
                   {/* Body */}
-                  <a className="card-body" href="#!">
-                    {/* Heading */}
-                    <h3>{post.title.substring(0, 60) + "..."}</h3>
-                    {/* Text */}
-                    <p className="mb-0 text-muted">
-                      {post.excerpt?.substring(0, 90)}
-                    </p>
-                  </a>
+                  <Link
+                    href={`/blog/${encodeURIComponent(post.slug)}`}
+                    passHref
+                  >
+                    <div className="card-body">
+                      {/* Heading */}
+                      <h3>{post.title.substring(0, 60) + "..."}</h3>
+                      {/* Text */}
+                      <p className="mb-0 text-muted">
+                        {post.excerpt?.substring(0, 90) + "..."}
+                      </p>
+                    </div>
+                  </Link>
+
                   {/* Meta */}
-                  <a className="card-meta mt-auto" href="#!">
-                    {/* Divider */}
-                    <hr className="card-meta-divider" />
-                    {/* Avatar */}
+                  <Link
+                    href={`/blog/${encodeURIComponent(post.slug)}`}
+                    passHref
+                  >
+                    <a className="card-meta mt-auto">
+                      {/* Divider */}
+                      <hr className="card-meta-divider" />
+                      {/* Avatar */}
 
-                    {post.authors && post.authors[0] && (
-                      <div className="avatar avatar-sm mr-2">
-                        <Image
-                          src={post.authors[0].profile_image}
-                          alt="..."
-                          className="avatar-img rounded-circle"
-                          height="100"
-                          width="100"
-                        />
-                      </div>
-                    )}
+                      {post.authors && post.authors[0] && (
+                        <div className="avatar avatar-sm mr-2">
+                          <Image
+                            src={post.authors[0].profile_image}
+                            alt="..."
+                            className="avatar-img rounded-circle"
+                            height="100"
+                            width="100"
+                          />
+                        </div>
+                      )}
 
-                    {/* Author */}
-                    {post.authors && post.authors[0] && (
-                      <h6 className="text-uppercase text-muted mr-2 mb-0">
-                        {post.authors[0].name}
-                      </h6>
-                    )}
+                      {/* Author */}
+                      {post.authors && post.authors[0] && (
+                        <h6 className="text-uppercase text-muted mr-2 mb-0">
+                          {post.authors[0].name}
+                        </h6>
+                      )}
 
-                    {/* Date */}
-                    <p className="h6 text-uppercase text-muted mb-0 ml-auto">
-                      <time dateTime="2019-05-02">
-                        {formatDistance(
-                          new Date(post.published_at),
-                          new Date()
-                        )}
-                      </time>
-                    </p>
-                  </a>
+                      {/* Date */}
+                      <p className="h6 text-uppercase text-muted mb-0 ml-auto">
+                        <time dateTime="2019-05-02">
+                          {formatDistance(
+                            new Date(post.published_at),
+                            new Date()
+                          )}
+                        </time>
+                      </p>
+                    </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -827,8 +846,7 @@ function Blog(props: { posts: PostsOrPages }) {
                       Subscribe
                     </button>
                   </div>
-                </div>{" "}
-                {/* / .row */}
+                </div>
               </form>
             </div>
           </div>
