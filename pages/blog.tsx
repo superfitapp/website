@@ -43,7 +43,7 @@ function Blog(props: { posts: PostsOrPages }) {
       </div>
 
       {/* SEARCH */}
-      <section className="mt-n6">
+      <section hidden className="mt-n6">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -115,7 +115,7 @@ function Blog(props: { posts: PostsOrPages }) {
       </section>
 
       {/* ARTICLES */}
-      <section className="pt-7 pt-md-10">
+      <section hidden className="pt-7 pt-md-10">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -188,6 +188,7 @@ function Blog(props: { posts: PostsOrPages }) {
           </div>
         </div>
       </section>
+
       {/* ARTICLES */}
       <section className="pt-7 pt-md-10">
         <div className="container">
@@ -249,14 +250,14 @@ function Blog(props: { posts: PostsOrPages }) {
                     href={`/blog/${encodeURIComponent(post.slug)}`}
                     passHref
                   >
-                    <div className="card-body">
+                    <a className="card-body">
                       {/* Heading */}
                       <h3>{post.title.substring(0, 60) + "..."}</h3>
                       {/* Text */}
                       <p className="mb-0 text-muted">
                         {post.excerpt?.substring(0, 90) + "..."}
                       </p>
-                    </div>
+                    </a>
                   </Link>
 
                   {/* Meta */}
@@ -307,164 +308,7 @@ function Blog(props: { posts: PostsOrPages }) {
       </section>
 
       {/* ARTICLES */}
-      <section className="pt-7 pt-md-10">
-        <div className="container">
-          <div className="row align-items-center mb-5">
-            <div className="col-12 col-md">
-              {/* Heading */}
-              <h3 className="mb-0">Case Studies</h3>
-              {/* Text */}
-              <p className="mb-0 text-muted">In-depth looks at our work.</p>
-            </div>
-            <div className="col-12 col-md-auto">
-              {/* Button */}
-              <a
-                href="#!"
-                className="btn btn-sm btn-outline-gray-300 d-none d-md-inline"
-              >
-                View all
-              </a>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              {/* Card */}
-              <div className="card card-row shadow-light-lg mb-6">
-                <div className="row gx-0">
-                  <div className="col-12 col-md-6">
-                    {/* Slider */}
-                    <div
-                      className="card-img-slider"
-                      data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'
-                    >
-                      <a
-                        className="card-img-left w-100 bg-cover"
-                        style={{
-                          backgroundImage: "url(/img/photos/photo-1.jpg)",
-                        }}
-                        href="#!"
-                      >
-                        {/* Image (placeholder) */}
-                        <img
-                          src="/img/photos/photo-1.jpg"
-                          alt="..."
-                          className="img-fluid d-md-none invisible"
-                        />
-                      </a>
-                      <a
-                        className="card-img-left w-100 bg-cover"
-                        style={{
-                          backgroundImage: "url(/img/photos/photo-26.jpg)",
-                        }}
-                        href="#!"
-                      >
-                        {/* Image (placeholder) */}
-                        <img
-                          src="/img/photos/photo-26.jpg"
-                          alt="..."
-                          className="img-fluid d-md-none invisible"
-                        />
-                      </a>
-                    </div>
-                    {/* Shape */}
-                    <div className="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                      <Curves4 />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6 position-static">
-                    {/* Slider */}
-                    <div
-                      className="position-static"
-                      data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'
-                      id="blogSlider"
-                    >
-                      <div className="w-100">
-                        {/* Body */}
-                        <a className="card-body" href="#!">
-                          {/* Heading */}
-                          <h3>
-                            Spending Time Outside the Office with Coworkers Is
-                            Great for Productivity.
-                          </h3>
-                          {/* Text */}
-                          <p className="mb-0 text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Duis nec condimentum quam. Fusce pellentesque
-                            faucibus lorem at viverra. Integer at feugiat odio.
-                            In placerat euismod risus proin erat purus.
-                          </p>
-                        </a>
-                        {/* Meta */}
-                        <a className="card-meta mt-auto" href="#!">
-                          {/* Divider */}
-                          <hr className="card-meta-divider" />
-                          {/* Avatar */}
-                          <div className="avatar avatar-sm mr-2">
-                            <img
-                              src="/img/avatars/avatar-2.jpg"
-                              alt="..."
-                              className="avatar-img rounded-circle"
-                            />
-                          </div>
-                          {/* Author */}
-                          <h6 className="text-uppercase text-muted mr-2 mb-0">
-                            Adolfo Hess
-                          </h6>
-                          {/* Date */}
-                          <p className="h6 text-uppercase text-muted mb-0 ml-auto">
-                            <time dateTime="2019-05-02">May 02</time>
-                          </p>
-                        </a>
-                      </div>
-                      <div className="w-100">
-                        {/* Body */}
-                        <a className="card-body" href="#!">
-                          {/* Heading */}
-                          <h3>
-                            Working in Cafes Doesn't Inspire You. It Kills Your
-                            Output and Costs Money.
-                          </h3>
-                          {/* Text */}
-                          <p className="mb-0 text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Duis nec condimentum quam. Fusce pellentesque
-                            faucibus lorem at viverra. Integer at feugiat odio.
-                            In placerat euismod risus proin erat purus.
-                          </p>
-                        </a>
-                        {/* Meta */}
-                        <a className="card-meta mt-auto" href="#!">
-                          {/* Divider */}
-                          <hr className="card-meta-divider" />
-                          {/* Avatar */}
-                          <div className="avatar avatar-sm mr-2">
-                            <img
-                              src="/img/avatars/avatar-1.jpg"
-                              alt="..."
-                              className="avatar-img rounded-circle"
-                            />
-                          </div>
-                          {/* Author */}
-                          <h6 className="text-uppercase text-muted mr-2 mb-0">
-                            Ab Hadley
-                          </h6>
-                          {/* Date */}
-                          <p className="h6 text-uppercase text-muted mb-0 ml-auto">
-                            <time dateTime="2019-05-02">May 02</time>
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>{" "}
-                {/* / .row */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* ARTICLES */}
-      <section className="pt-7 pt-md-10">
+      <section hidden className="pt-7 pt-md-10">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -855,9 +699,26 @@ function Blog(props: { posts: PostsOrPages }) {
   );
 }
 
-Blog.getInitialProps = async (ctx) => {
+/**
+ *
+ * https://nextjs.org/docs/api-reference/data-fetching/getInitialProps
+ */
+
+// This function gets called at build time on server-side.
+// It may be called again, on a serverless function, if
+// revalidation is enabled and a new request comes in
+export async function getStaticProps() {
   const posts: PostsOrPages | void = await getPosts();
-  return { posts: posts };
-};
+
+  return {
+    props: {
+      posts,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every second
+    revalidate: 1, // In seconds
+  };
+}
 
 export default Blog;

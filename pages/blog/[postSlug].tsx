@@ -1,7 +1,7 @@
 import AuthorRow from "@/components/author-row";
 import Layout from "@/components/layout";
-import { getPost } from "@/utils/posts";
-import { PostOrPage } from "@tryghost/content-api";
+import { getPost, getPosts } from "@/utils/posts";
+import { PostOrPage, PostsOrPages } from "@tryghost/content-api";
 import Image from "next/image";
 require("@/styles/BlogPost.module.css");
 
@@ -122,16 +122,65 @@ function BlogPost(props: { post: PostOrPage }) {
   );
 }
 
-BlogPost.getInitialProps = async ({ query }) => {
-  const { postSlug } = query;
+// This function gets called at build time
+export async function getStaticPaths() {
+  const posts: PostsOrPages | void = await getPosts();
 
+  if (!posts) {
+    return {
+      paths: [],
+      fallback: true,
+    };
+  }
+
+  return {
+    // Only `/posts/1` and `/posts/2` are generated at build time
+    paths: posts.map((post) => {
+      return {
+        params: {
+          postSlug: post.slug,
+        },
+      };
+    }),
+    // paths: [{ params: { postSlug: "1" } }, { params: { id: "2" } }],
+    // Enable statically generating additional pages
+    // For example: `/posts/3`
+    fallback: true,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const { postSlug } = params;
   if (!postSlug) {
-    window.location.href = "/404";
-    return;
+    return {
+      props: null,
+      revalidate: 1,
+    };
   }
 
   const post: PostOrPage | void = await getPost(postSlug);
-  return { post: post };
-};
+
+  return {
+    props: {
+      post,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every second
+    revalidate: 1, // In seconds
+  };
+}
+
+// BlogPost.getInitialProps = async ({ query }) => {
+//   const { postSlug } = query;
+
+//   if (!postSlug) {
+//     window.location.href = "/404";
+//     return;
+//   }
+
+//   const post: PostOrPage | void = await getPost(postSlug);
+//   return { post: post };
+// };
 
 export default BlogPost;
