@@ -620,6 +620,11 @@ function Nav({ user, loading, containerClass, navClassList }: NavInit) {
                 </li>
               </ul>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/blog">
+                Blog
+              </a>
+            </li>
           </ul>
           {/* Button */}
           <a
