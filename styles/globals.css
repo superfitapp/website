@@ -51,6 +51,7 @@ a {
     hsla(0, 0%, 100%, 0)
   );
 }
+
 *,
 :after,
 :before {
@@ -21446,3 +21447,5 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
   position: absolute;
   right: 15px;
 }
+
+@import url("@/styles/BlogPost.module.css");

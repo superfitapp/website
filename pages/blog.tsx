@@ -1,6 +1,5 @@
 import Layout from "@/components/layout";
 import Curves from "@/partials/shapes/curves/curve-1.svg";
-import Curves2 from "@/partials/shapes/curves/curve-2.svg";
 import Curves3 from "@/partials/shapes/curves/curve-3.svg";
 import Curves4 from "@/partials/shapes/curves/curve-4.svg";
 import Curves5 from "@/partials/shapes/curves/curve-5.svg";
