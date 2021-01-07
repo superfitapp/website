@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import PersonalPro from "@/components/prices/personal-pro";
 import Commerce from "@/components/prices/commerce";
 import Free from "@/components/prices/free";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   useEffect(() => {
@@ -24,6 +25,10 @@ export default function Home() {
   }, []);
 
   return (
+    <>
+    <NextSeo
+        canonical="https://superfitapp.com"
+      />
     <Layout
       user={null}
       loading={false}
@@ -766,5 +771,6 @@ export default function Home() {
         </div>
       </div>
     </Layout>
+    </>
   );
 }

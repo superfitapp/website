@@ -1,11 +1,10 @@
 const title = "SuperFit – where workouts are built.";
 const description =
-  "Powerful workout builder. Simple client app. Built-in signup forms. Integrated subscription billing.";
+  "Software for fitness professionals. Powerful workout builder. Built-in signup forms. Integrated billing.";
 
 const SEO = {
   title,
   description,
-  canonical: "https://superfitapp.com",
   openGraph: {
     type: "website",
     locale: "en_IE",
@@ -18,7 +17,7 @@ const SEO = {
         width: 800,
         height: 600,
         alt: "Og Image Alt",
-      }
+      },
     ],
   },
   twitter: {
