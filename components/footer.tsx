@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Footer({ user, loading, footerSectionClassList, footerClassList }) {
   return (
-    // <section className={footerSectionClassList}>
+    <section className={footerSectionClassList}>
       <footer className={"py-8 py-md-11 " + footerClassList}>
         <div className="container ">
           {/* Download App */}
@@ -63,7 +63,10 @@ function Footer({ user, loading, footerSectionClassList, footerClassList }) {
                   </a>
                 </li>
                 <li className="mb-3">
-                  <a href="https://headwayapp.co/superfit-updates" className="text-reset">
+                  <a
+                    href="https://headwayapp.co/superfit-updates"
+                    className="text-reset"
+                  >
                     Changelog
                   </a>
                 </li>
@@ -106,10 +109,9 @@ function Footer({ user, loading, footerSectionClassList, footerClassList }) {
               </ul>
             </div>
           </div>
-        </div>{" "}
-        {/* / .container */}
+        </div>
       </footer>
-    // </section>
+    </section>
   );
 }
 
