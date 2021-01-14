@@ -44,7 +44,7 @@ function Footer({ user, loading, footerSectionClassList, footerClassList }) {
               {/* List */}
               <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
                 <li className="mb-3">
-                  <a href="paid-memberships" className="text-reset">
+                  <a href="/paid-memberships" className="text-reset">
                     Paid Memberships
                   </a>
                 </li>
@@ -79,12 +79,12 @@ function Footer({ user, loading, footerSectionClassList, footerClassList }) {
               {/* List */}
               <ul className="list-unstyled text-muted mb-0">
                 <li className="mb-3">
-                  <a href="terms" className="text-reset">
+                  <a href="/terms" className="text-reset">
                     Terms of Service
                   </a>
                 </li>
                 <li className="mb-3">
-                  <a href="privacy-policy" className="text-reset">
+                  <a href="/privacy-policy" className="text-reset">
                     Privacy Policy
                   </a>
                 </li>
