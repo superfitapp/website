@@ -174,7 +174,7 @@ function Blog(props: { posts: PostsOrPages }) {
 
                         {/* Date */}
                         <p className="h6 text-uppercase text-muted mb-0 ms-auto">
-                          <time dateTime="2019-05-02">
+                          <time>
                             {formatDistance(
                               new Date(post.published_at),
                               new Date()
@@ -208,26 +208,16 @@ function Blog(props: { posts: PostsOrPages }) {
                   From us to your inbox weekly.
                 </p>
               </div>
-              <div className="col-12 col-md-5">
-                {/* Form */}
-                <form>
-                  <div className="row">
-                    <div className="col">
-                      {/* Input */}
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Enter your email"
-                      />
-                    </div>
-                    <div className="col-auto ms-n5">
-                      {/* Button */}
-                      <button className="btn btn-primary" type="submit">
-                        Subscribe
-                      </button>
-                    </div>
-                  </div>
-                </form>
+              <div className="col-12 col-md-3">
+                <div className="row">
+                  <a
+                    target="_blank"
+                    href="https://blog.superfitapp.com/newsletter"
+                    className="btn btn-primary"
+                  >
+                    Subscribe
+                  </a>
+                </div>
               </div>
             </div>
           </div>

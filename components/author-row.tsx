@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PostOrPage } from "@tryghost/content-api";
+import { format } from 'date-fns'
 import React from "react";
 
 class AuthorRow extends React.Component<PostOrPage, any> {
@@ -28,8 +29,8 @@ class AuthorRow extends React.Component<PostOrPage, any> {
           )}
 
           {/* Date */}
-          <time className="font-size-sm text-muted" dateTime="2019-05-20">
-            Published on May 20, 2019
+          <time className="font-size-sm text-muted">
+            {format(new Date(post.published_at), 'MMMM d, yyyy')}
           </time>
         </div>
 
