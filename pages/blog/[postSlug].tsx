@@ -71,7 +71,6 @@ function BlogPost(props: { post: PostOrPage }) {
       >
         <div>
           {/* IMAGE */}
-
           {featureImageUrl && (
             <section
               data-jarallax
@@ -98,7 +97,6 @@ function BlogPost(props: { post: PostOrPage }) {
                     {props.post.excerpt}
                   </p>
                   {/* Meta */}
-
                   <AuthorRow {...props.post}></AuthorRow>
                 </div>
               </div>{" "}

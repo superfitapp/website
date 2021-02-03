@@ -63,10 +63,7 @@ export default function PersonalPro() {
               <div className="badge badge-rounded-circle bg-success-soft mt-1 me-4">
                 <i className="fe fe-check" />
               </div>
-              <p>
-                Premium Instagram-like video editor <br /> (auto saved drafts,
-                slow-motion, trim clips & more)
-              </p>
+              <p>Priority Video Call Support</p>
             </div>
             <div className="d-flex">
               {/* Check */}

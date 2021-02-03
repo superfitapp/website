@@ -9,6 +9,7 @@ const options = {
   duration: 700,
   easing: "ease-out-quad",
   once: true,
+  delay: 1000,
   startEvent: "load",
 };
 

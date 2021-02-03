@@ -13,15 +13,7 @@ import { NextSeo } from "next-seo";
 export default function Home() {
   useEffect(() => {
     require("@/public/js/bigpicture");
-    require("@/public/js/aos");
     require("@/public/js/pricing");
-
-    const options = {
-      duration: 700,
-      easing: "ease-out-quad",
-      once: true,
-      startEvent: "load",
-    };
   }, []);
 
   return (

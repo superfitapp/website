@@ -53,21 +53,7 @@ export default function Commerce() {
               <div className="badge badge-rounded-circle bg-primary-soft mt-1 me-4">
                 <i className="fe fe-check" />
               </div>
-              <p>Auto-renewing memberships</p>
-            </div>
-            <div className="d-flex">
-              {/* Check */}
-              <div className="badge badge-rounded-circle bg-primary-soft mt-1 me-4">
-                <i className="fe fe-check" />
-              </div>
-              <p>One-time purchases</p>
-            </div>
-            <div className="d-flex">
-              {/* Check */}
-              <div className="badge badge-rounded-circle bg-primary-soft mt-1 me-4">
-                <i className="fe fe-check" />
-              </div>
-              <p>Priority Video Call Support</p>
+              <p>Offer memberships & one-time purchases</p>
             </div>
             <div className="d-flex">
               {/* Check */}
@@ -82,13 +68,13 @@ export default function Commerce() {
                 <i className="fe fe-check" />
               </div>
               <p>
-                2% revenue share{" "}
+                Zero Commissions - Earn 100% Profit
                 <a
                   target="_blank"
                   className="text-gray-800 fw-bold"
                   href="https://www.patreon.com/product/pricing"
                 >
-                  (vs. Patreon's ~10%)
+                 {" "} (vs. Patreon's ~10%)
                 </a>
               </p>
             </div>
