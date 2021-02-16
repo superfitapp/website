@@ -2,8 +2,8 @@ export default function Commerce() {
   return (
     <div
       className="card rounded-lg shadow"
-      data-aos="fade-up"
-      data-aos-delay={200}
+      data-aos="fade-in"
+      data-aos-delay="200"
     >
       <div className="card-body py-6 py-md-8">
         <div className="row justify-content-center">

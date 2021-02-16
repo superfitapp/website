@@ -1,5 +1,13 @@
 const path = require("path");
 module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/s/:path*',
+        destination: `${process.env.NEXT_PUBLIC_ONSUPERFIT_BASE_URL}/s/:path*`
+      },
+    ]
+  },
   onDemandEntries: {
     // period (in ms) where the server will keep pages in the buffer
     maxInactiveAge: 25 * 1000,
